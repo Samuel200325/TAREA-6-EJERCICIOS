@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+    <style>
+        body {
+            background-image: url(https://backgroundlabs.com/wp-content/uploads/2013/04/blue-abstract-background-500x500.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 130%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: mediumspringgreen;
+        }
+        
+        p {
+            text-align: center;
+            background-color: mediumaquamarine;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        a {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: chartreuse;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%206%20EJERCICIOS/index.html">INICIO</a>
+    <h2>EJERCICIO N°4</h2>
+    <p> En una tienda de calzado se esta ofreciendo un descuento por compra a sus clientes con categorías, dependiendo de su tipo, sólo existen tres tipos de categorías, tipo A, tipo B y tipo C</p>
+    <p id="precZ"></p>
+    <p id="desc"></p>
+    <p id="Tot"></p>
+
+    <script>
+        let tip, precioZ, descuT, totalZ;
+        alert("BIENVENIDO A ALMACENES ELSA PATITO")
+        tip = prompt("INGRESE TIPO DE DESCUENTO (A,B o C)")
+        switch (tip) {
+            case "A":
+            case "a":
+                alert("OBTUBISTE UN 10% DE DESCUENTO")
+                precioZ = Number(prompt("INGRESE EL PRECIO DEL CALZADO"))
+                descuT = precioZ * (0.10);
+                totalZ = precioZ - descuT;
+
+                document.getElementById("precZ").innerHTML = "TU CALZADO CUESTA : " + precioZ + "$";
+                document.getElementById("desc").innerHTML = "TU DESCUENTO (10%) ES DE : " + descuT + "$";
+                document.getElementById("Tot").innerHTML = "TOTAL A PAGAR : " + totalZ + "$";
+                break;
+            case "B":
+            case "b":
+                alert("OBTUBISTE UN 15% DE DESCUENTO")
+                precioZ = Number(prompt("INGRESE EL PRECIO DEL CALZADO"))
+                descuT = precioZ * (0.15);
+                totalZ = precioZ - descuT;
+
+                document.getElementById("precZ").innerHTML = "TU CALZADO CUESTA : " + precioZ + "$";
+                document.getElementById("desc").innerHTML = "TU DESCUENTO (15%) ES DE : " + descuT + "$";
+                document.getElementById("Tot").innerHTML = "TOTAL A PAGAR : " + totalZ + "$";
+                break;
+            case "C":
+            case "c":
+                alert("OBTUBISTE UN 20% DE DESCUENTO")
+                precioZ = Number(prompt("INGRESE EL PRECIO DEL CALZADO"))
+                descuT = precioZ * (0.20);
+                totalZ = precioZ - descuT;
+
+                document.getElementById("precZ").innerHTML = "TU CALZADO CUESTA : " + precioZ + "$";
+                document.getElementById("desc").innerHTML = "TU DESCUENTO (20%) ES DE : " + descuT + "$";
+                document.getElementById("Tot").innerHTML = "TOTAL A PAGAR : " + totalZ + "$";
+                break;
+            default:
+                alert("VALOR INGRESADO INVALIDO :(")
+
+        }
+    </script>
+</body>
+
+</html>

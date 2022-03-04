@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+    <style>
+        body {
+            background-image: url(https://backgroundlabs.com/wp-content/uploads/2013/04/blue-abstract-background-500x500.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 130%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: mediumspringgreen;
+        }
+        
+        p {
+            text-align: center;
+            background-color: mediumaquamarine;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        a {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: chartreuse;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%206%20EJERCICIOS/index.html">INICIO</a>
+    <h2>EJERCICIO N°5</h2>
+    <p>Ingresar números por teclado,hasta que el usuario ingrese el 0. Al final imprimir la sumatoria de todos los números ingresados</p>
+    <p>¡¡FELICIDADES!! DESCUBRISTE EL NUMERO 0</p>
+    <p id="sum"></p>
+
+    <script>
+        let cont = (numI);
+        let suma = 0
+        alert("BIENVENIDO AL DESCUBRIDOR EL NUMERO 0")
+        numI = Number(prompt("INGRESE EL NUMERO 0 "))
+        do {
+            alert("ESE NO ES EL NUMERO 0")
+            numI = Number(prompt("INGRESE EL NUMERO 0 "))
+            num = parseFloat(numI)
+            if (numI != 0) {
+                suma = suma + cont
+            } else {
+
+            }
+        } while (numI = 0)
+
+
+        document.getElementById("sum").innerHTML = "LA SUMA DE TODOS LOS NUMERO QUE NO ERAN EL 0 SON : " + suma;
+    </script>
+
+</body>
+
+</html>

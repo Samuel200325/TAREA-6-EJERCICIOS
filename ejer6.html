@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+    <style>
+        body {
+            background-image: url(https://backgroundlabs.com/wp-content/uploads/2013/04/blue-abstract-background-500x500.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 130%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: mediumspringgreen;
+        }
+        
+        p {
+            text-align: center;
+            background-color: mediumaquamarine;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        a {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: chartreuse;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%206%20EJERCICIOS/index.html">INICIO</a>
+    <h2>EJERCICIO N°6</h2>
+    <p>Crear un programa que permita calcular Promedio de Notas, mientras N sea diferente de 0</p>
+    <p id="Promedio"></p>
+    <script>
+        let numNotas = parseInt(prompt("Ingrese el número de notas que quiere promediar"));
+        let suma = 0;
+        let promedio;
+
+        for (var i = 1; i <= numNotas; i++) {
+            let notas = parseInt(prompt("Ingrese las nota " + i));
+            document.write("<br>NOTA ", i, " : " + notas + "<br>");
+            suma = suma + notas;
+            promedio = suma / numNotas;
+        }
+        document.getElementById("Promedio").innerHTML = "SU PROMEDIO TOTAL ES DE : " + promedio;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title>
+    <style>
+        body {
+            background-image: url(https://backgroundlabs.com/wp-content/uploads/2013/04/blue-abstract-background-500x500.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 130%;
+        }
+        
+        h2 {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: mediumspringgreen;
+        }
+        
+        p {
+            text-align: center;
+            background-color: mediumaquamarine;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            font-weight: bold;
+        }
+        
+        a {
+            text-align: center;
+            color: crimson;
+            border: 4px rgb(255, 255, 255);
+            border-style: double;
+            border-radius: 50px;
+            background-color: chartreuse;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="file:///C:/Users/compu/OneDrive/Escritorio/TAREA%206%20EJERCICIOS/index.html">INICIO</a>
+    <h2>EJERCICIO N°1</h2>
+    <p> En un almacén se están ofreciendo las siguientes ofertas de descuento en compras (ver tabla). Calcular el valor de descuento y valor a pagar por la compra de cierta cantidad de un articulo , si se conoce el precio unitario</p>
+    <p id="produ"></p>
+    <p id="valorU"></p>
+    <p id="desc"></p>
+    <p id="valorA"></p>
+    <script>
+        var cA, pU, psD, vD, vP;
+
+        alert("BIENVENIDO AL CALCULADOR DE DESCUENTOS :)")
+        cA = Number(prompt("INGRESE EL NUMERO DE ARTICULOS QUE COMPRARA :"))
+
+        if (cA >= 1 && cA <= 100) {
+            alert("USTED OBTENDRA UN DESCUENTO DE 2%")
+            pU = Number(prompt("INGRESE EL VALOR UNITARIO DEL ARTICULO QUE COMPRARA :"))
+            psD = cA * (pU)
+            vD = psD * (0.02)
+            vP = psD - vD
+
+            document.getElementById("produ").innerHTML = "CANTIDAD DE PRODUCTOS : " + cA;
+            document.getElementById("valorU").innerHTML = "VALOR UNITARIO DEL PRODUCTO : " + pU;
+            document.getElementById("desc").innerHTML = "SU DESCUENTO ES DE : " + vD;
+            document.getElementById("valorA").innerHTML = "SU VALOR A PAGAR ES DE : " + vP;
+        } else {
+            if (cA >= 101 && cA <= 250) {
+                alert("USTED OBTENDRA UN DESCUENTO DE 5%")
+                pU = Number(prompt("INGRESE EL VALOR UNITARIO DEL ARTICULO QUE COMPRARA :"))
+                psD = cA * (pU)
+                vD = psD * (0.05)
+                vP = psD - vD
+
+                document.getElementById("produ").innerHTML = "CANTIDAD DE PRODUCTOS : " + cA;
+                document.getElementById("valorU").innerHTML = "VALOR UNITARIO DEL PRODUCTO : " + pU;
+                document.getElementById("desc").innerHTML = "SU DESCUENTO ES DE : " + vD + "$";
+                document.getElementById("valorA").innerHTML = "SU VALOR A PAGAR ES DE : " + vP + "$";
+
+            } else {
+                if (cA >= 251 && cA <= 800) {
+                    alert("USTED OBTENDRA UN DESCUENTO DE 8%")
+                    pU = Number(prompt("INGRESE EL VALOR UNITARIO DEL ARTICULO QUE COMPRARA :"))
+                    psD = cA * (pU)
+                    vD = psD * (0.08)
+                    vP = psD - vD
+
+                    document.getElementById("produ").innerHTML = "CANTIDAD DE PRODUCTOS : " + cA;
+                    document.getElementById("valorU").innerHTML = "VALOR UNITARIO DEL PRODUCTO : " + pU;
+                    document.getElementById("desc").innerHTML = "SU DESCUENTO ES DE : " + vD + "$";
+                    document.getElementById("valorA").innerHTML = "SU VALOR A PAGAR ES DE : " + vP + "$";
+                } else {
+                    if (cA >= 801) {
+                        alert("USTED OBTENDRA UN DESCUENTO DE 12%")
+                        pU = Number(prompt("INGRESE EL VALOR UNITARIO DEL ARTICULO QUE COMPRARA :"))
+                        psD = cA * (pU)
+                        vD = psD * (0.12)
+                        vP = psD - vD
+
+                        document.getElementById("produ").innerHTML = "CANTIDAD DE PRODUCTOS : " + cA;
+                        document.getElementById("valorU").innerHTML = "VALOR UNITARIO DEL PRODUCTO : " + pU;
+                        document.getElementById("desc").innerHTML = "SU DESCUENTO ES DE : " + vD + "$";
+                        document.getElementById("valorA").innerHTML = "SU VALOR A PAGAR ES DE : " + vP + "$";
+
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
